@@ -1,0 +1,1 @@
+https://laracasts.com/discuss/channels/laravel/laravel-file-storage-how-to-store-decoded-base64-image
