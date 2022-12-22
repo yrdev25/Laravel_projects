@@ -35,15 +35,15 @@ class HomeController extends Controller
           // Role::create(['name' => 'employee']);
          // Permission::create(['name' => 'add_hr']);
         //  Permission::create(['name' => 'add_employee']);
-      //  $role = Role::findById(1);
-        //   $permission = Permission::findById(1);
+        $role = Role::findById(1);
+           $permission = Permission::findById(1);
       //  $permission2 = Permission::findById(2);
          //$role->givePermissionTo($permission);
       //   $role->givePermissionTo($permission2);
      // auth()->user()->assignRole('Admin');
     //   $pormission->removeRole($role);
     // $user = User::first();
-    // $user->assignRole('admin');
+     $user->assignRole('admin');
   // return auth()->user()->getPermissionsViaRoles();
  
 

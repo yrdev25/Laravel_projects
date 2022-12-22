@@ -31,7 +31,7 @@ class HomeController extends Controller
         if(Auth::id() == '1'){
             if(Auth::user()->hasAllPermissions(['create_hr','create_employee']))
             {
-                $users = User::with('roles')->whereNotIn('id',[Auth::id()])->get();
+                $users = User::with('roles')->whereNotIn('id',[Auth::id()]);
                 return view('home',compact('users'));
             }else{
                 $user = Auth::user();

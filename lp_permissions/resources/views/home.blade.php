@@ -35,12 +35,12 @@
                             @if(Auth::user()->can('create_hr') && Auth::user()->can('create_employee'))
                             <td>{{ $user->name }}</td>
                             <td>{{ $user->email }}</td>
-                            <td>{{ $user->roles[0]->name }}</td>
+                            <td>{{ $user->roles->name }}</td>
                             @elseif(Auth::user()->can('create_employee'))
                                 @if($user->roles[0]->name == 'employee')
                                 <td>{{ $user->name }}</td>
                                 <td>{{ $user->email }}</td>
-                                <td>{{ $user->roles[0]->name }}</td>
+                                <td>{{ $user->roles->name }}</td>
                                 @endif
                             @endif                          
                            </tr>
